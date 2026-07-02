@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>objetos javascript</title>
 </head>
+
 <body>
     <h1>objetos javascript</h1>
     <script>
         const pessoa = {
-            nome:"joão"
-            idade:30
-            saudacao: function() {
+            nome: "joão",
+            idade: 30,
+            saudacao: function () {
                 console.log("olá,meu nome é" + this.nome);
             }
         };
-        pessooa.saudacao();//chama o método saudacao do objeto pessoa
-        
+
+        const carro = {
+            marca: "FIAT",
+            modelo: "UNO",
+            cor: "azul",
+            acelera: function () {
+                console.log("Estou acelerando!");
+            }
+        };   
+        const animais = {
+            especie:"vaca",
+            selvagem:"cobra",
+            vertebrados:"cachorro",
+             alimentação: function () {
+                console.log("Estou alimentando os animais!");
+            }
+        };    
     </script>
 </body>
+
 </html>
